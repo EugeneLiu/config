@@ -1,0 +1,21 @@
+[user]
+	name = Eugene
+	email = eugene.liujing.zh@gmail.com
+[core]
+	editor = vim
+	excludesfile = /Users/eugene/.gitignore_global
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
+	di = diff
+	dc = diff --cached
+	l = "!source ~/.githelpers && pretty_git_log"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
